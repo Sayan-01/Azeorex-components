@@ -1,4 +1,5 @@
 import './App.css';
+import Home from './pages/Home'
 import Component1 from './components/Component1';
 import { FaFire } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
@@ -12,7 +13,9 @@ import { IoMdSettings } from "react-icons/io";
 import { MdSupervisorAccount } from "react-icons/md";
 import { HiBookmark } from "react-icons/hi2";
 
-import Component4 from './components/Component4'
+import Component4 from './components/Component4';
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -30,10 +33,17 @@ function App() {
 
   return (
     <>
-      <Component1 icon={allIcons} />
-      <Component2 placeholder="What You want to Build ?" name="inputBox" id="inputBox"/>
-      <Component3 icon={icons} />
-      <Component4/>
+      <Routes>
+        <Route index element={<Home/>} />
+        <Route path='/component1' element={<Component1 icon={allIcons} />}/>
+        <Route path='/component2' element={<Component2 placeholder="What You want to Build ?" name="inputBox" id="inputBox"/>}/>
+        <Route path='/component3' element={<Component3 icon={icons} />}/>
+        <Route path='/component4' element={<Component4/>}/>
+      </Routes>
+      
+      
+      
+      
     </>
   )
 }
