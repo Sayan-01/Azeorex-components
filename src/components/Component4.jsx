@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaCar } from "react-icons/fa6";
+import CarIMG from "../assets/TaxiIMG.png";
 
 export default function Component4() {
   const [hovered, setHovered] = useState(false);
@@ -26,7 +26,7 @@ export default function Component4() {
               : "transform -translate-x-full opacity-0"
           }`}
         >
-          <FaCar size="2rem"/>
+          <img src={CarIMG} alt="" className="w-[2rem]"/>
         </span>
       </button>
     </div>
