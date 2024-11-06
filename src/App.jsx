@@ -17,6 +17,8 @@ import Component4 from './components/Component4';
 
 import { Route, Routes } from 'react-router-dom';
 
+import Component5 from './components/Component5';
+
 function App() {
 
   //Component 1 Icons
@@ -39,6 +41,7 @@ function App() {
         <Route path='/component2' element={<Component2 placeholder="What You want to Build ?" name="inputBox" id="inputBox"/>}/>
         <Route path='/component3' element={<Component3 icon={icons} />}/>
         <Route path='/component4' element={<Component4/>}/>
+        <Route path='/component5' element={<Component5/>}/>
       </Routes>
       
       

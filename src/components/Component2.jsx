@@ -20,10 +20,10 @@ export default function Component2({ placeholder, name, id }) {
   return (
     <div className='flex flex-col gap-4'>
       <div>
-        <div className='text-black font-bold text-4xl'>What Do You Want To Build?</div>
+        <div className='text-white font-bold text-4xl'>What Do You Want To Build?</div>
         <div>Prompt, run, edit and deploy full-stack web apps.</div>
       </div>
-      <div className='bg-black p-4 rounded-xl flex flex-col gap-5'>
+      <div className='bg-black p-4 rounded-xl border-white border-[1px] flex flex-col gap-5'>
       <div className='flex items-center'>
         <input
           type="text"
